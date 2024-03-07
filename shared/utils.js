@@ -15,7 +15,7 @@
 
 window.gltfLoader = new THREE.GLTFLoader();
 
-const glbFilePaths = ["https://github.com/nahomane/webXRgametest/blob/main/assets/ant.glb","https://github.com/nahomane/webXRgametest/blob/main/assets/bee.glb","https://github.com/nahomane/webXRgametest/blob/main/assets/cockroach.glb","https://github.com/nahomane/webXRgametest/blob/main/assets/dung_beetle.glb"];
+const glbFilePaths = ["https://github.com/nahomane/webXRgametest/main/assets/ant.glb","https://github.com/nahomane/webXRgametest/main/assets/bee.glb","https://github.com/nahomane/webXRgametest/main/assets/cockroach.glb","https://github.com/nahomane/webXRgametest/main/assets/dung_beetle.glb"];
 const glbModelsScales = [0.001,0.05,20,0.5];
 window.glbModels = [];
 window.mixers = [];
@@ -75,7 +75,7 @@ class Reticle extends THREE.Object3D {
     super();
 
     this.loader = new THREE.GLTFLoader();
-    this.loader.load("https://github.com/nahomane/webXRgametest/blob/main/assets/reticle.glb", (gltf) => {
+    this.loader.load("https://github.com/nahomane/webXRgametest/main/assets/reticle.glb", (gltf) => {
       const glbreticle = gltf.scene;
       glbreticle.scale.set(1,1,1);
       this.add(glbreticle);
