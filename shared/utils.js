@@ -15,7 +15,7 @@
 
 window.gltfLoader = new THREE.GLTFLoader();
 
-const glbFilePaths = ["./assets/ant.glb","./assets/bee.glb","./assets/cockroach.glb","./assets/dung_beetle.glb"];
+const glbFilePaths = ["assets/ant.glb","assets/bee.glb","assets/cockroach.glb","assets/dung_beetle.glb"];
 const glbModelsScales = [0.001,0.05,20,0.5];
 window.glbModels = [];
 window.mixers = [];
@@ -75,7 +75,7 @@ class Reticle extends THREE.Object3D {
     super();
 
     this.loader = new THREE.GLTFLoader();
-    this.loader.load("./assets/reticle.glb", (gltf) => {
+    this.loader.load("assets/reticle.glb", (gltf) => {
       const glbreticle = gltf.scene;
       glbreticle.scale.set(1,1,1);
       this.add(glbreticle);
